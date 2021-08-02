@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<script>
+	window.onload=function(){
+		var queryStr = window.location.search; // will give you ?sndReq=234
+		let userArray=queryStr.split('=')
+		let userName=userArray[1]
+		window.userName=userName
+		
+		//var paramPairs = queryStr.substr(1).split('&');
+		 let msg="Bienvenido@ "+userName
+		 let welcomeNode=document.getElementById("welcomeUserNode")
+		 welcomeNode.innerHTML=msg
+	}
+
+	function redirectfunc(){
+		window.location.replace("index.html?userName="+window.userName)
+	}
+</script>
+<html>
+	<head>
+		<title>🌻OPAUL🌻</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/icon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">OPAUL<span>ESCOM</span></a></div>
+				<span style="font-weight: bold;" id="welcomeUserNode"></span>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+			
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">PÁGINA PRINCIPAL</a></li>
+					<li><a href="login.html">INICIAR SESIÓN</a></li>
+					<li><a href="#three">MISIÓN Y VISIÓN</a></li>
+					<li><a href="#four">OBJETIVOS</a></li>
+					<li><a href="#five">DESARROLLADORES</a></li>
+					<li><a href="temario.html">TEMARIO</a></li>
+					<li><a href="#footer">CONTÁCTANOS</a></li>
+				</ul>
+			</nav>
+		<!-- Banner -->
+			<section id="banner" class="bg-img" data-bg="banner-1.jpg">
+				<div class="inner">
+					<header>
+						<h1>OPAUL</h1>
+					</header>
+				</div>
+				<a href="#one" class="more">Learn More</a>
+			</section>
+		<!-- One -->
+			<section id="one" class="wrapper post bg-img" data-bg="banner-2.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Transforma tu vida mediante la educación</h2>
+							<p>OPAUL</p>
+						</header>
+						<div class="content">
+							<p>Como uno de los objetivos de nuestro proyecto es ayudar al aprendizaje de estudiantes, este plan puede ser un obstáculo para ellos ya que estarían pagando una cantidad considerablemente alta  mensualmente y no todos cuentan con el capital económico para adquirir ese plan, además de que estarían pagando tal vez un servicio innecesario ya que estarían desperdiciando los demás cursos que esos planes disponen ya que es imposible que en un mes el estudiante pueda abarcar todos los cursos disponibles en cada plan, ya que el objetivo del estudiante es enfocarse en un solo curso a la vez.</p>
+						</div>
+						<footer>
+							<a href="index.html" class="button alt">EMPIEZA AHORA</a>
+						</footer>
+					</article>
+				</div>
+				<a href="#two" class="more">Learn More</a>
+			</section>
+		<!-- Two -->
+			<section id="two" class="wrapper post bg-img" data-bg="banner-3.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Tomando en cuenta que el número de estudiantes...</h2>
+							<p>OPAUL</p>
+						</header>
+						<div class="content">
+							<p>que utilizan plataformas digitales para complementar sus estudios ha ido en aumento podemos decir que en nuestra etapa de lanzamiento tenemos un riesgo poco, manejando el marketing adecuando podemos hacer una buena propagación del servicio para que se sepa de la existencia de este y atraer consumidores; ya que al empezar el semestre los estudiantes buscan herramientas de apoyo para reforzar sus estudios. 
+							En nuestra fase de crecimiento tenemos estimado que nuestros usuarios asciendan de 100 a 750 por mes.
+							Para nuestra fase de madurez tenemos en cuenta que dichos usuarios conocen ya nuestra plataforma y se les ha hecho de utilidad, por eso estos usuarios hacen el consumo de nuestro servicio de una manera constante.
+							Por último, en el declive consideramos que al término de cada semestre os usuarios ya no tendrán intereses en el uso de nuestra plataforma, ya que no es necesario complementar o reforzar algún tópico previsto, sin embargo, al empezar el nuevo semestre nuevos estudiantes tendrán la disposición de buscar este apoyo.</p>
+						</div>
+						<footer>
+							<a href="index.html" class="button alt">EMPIEZA AHORA</a>
+						</footer>
+					</article>
+				</div>
+				<a href="#three" class="more">Learn More</a>
+			</section>
+		<!-- Three -->
+			<section id="three" class="wrapper post bg-img" data-bg="banner-4.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Misión y vision</h2>
+							<p>OPAUL</p>
+						</header>
+						<div class="content">
+							<p>Proporcionar a los estudiantes de ESCOM de herramientas interactivas de aprendizaje para mejorar su comprensión intuitiva y práctica de variadas estructuras de datos.</p>
+							<p>Ser un lugar de consulta general sobre temas de programación que ofrezca una visión fresca, intuitiva y rápida de comprender.</p>
+						</div>
+						<footer>
+							<a href="index.html" class="button alt">EMPIEZA AHORA</a>
+						</footer>
+					</article>
+				</div>
+				<a href="#four" class="more">Learn More</a>
+			</section>
+		<!-- Four -->
+			<section id="four" class="wrapper post bg-img" data-bg="banner-5.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>OBJETIVOS</h2>
+							<p>OPAUL</p>
+						</header>
+						<div class="content">
+							<p>
+								<li>Crear una primera versión de la página.</li>
+								<li>Incorporar temas básicos de estructuras de datos.</li>
+								<li>Obtener un servidor y montar la página.</li>
+								<li>Llegar a 1000 visitas mensuales.</li>
+								<li>Llegar a tener 100 usuarios premium.</li>
+								<li>Cubrir el temario completo de estructuras de datos.</li>
+							</p>
+						</div>
+						<footer>
+							<a href="index.html" class="button alt">EMPIEZA AHORA</a>
+						</footer>
+					</article>
+				</div>
+				<a href="#five" class="more">Learn More</a>
+			</section>
+		<!-- Five -->
+			<section id="five" class="wrapper post bg-img" data-bg="banner-6.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>INTEGRANTES</h2>
+							<p>OPAUL</p>
+						</header>
+						<div class="content">
+							<div class="flex flex-4">
+								<div class="box person">
+									<div class="image round">
+										<img src="images/EduardoCastro.jpg" alt="Person 2" />
+									</div>
+									<h3>Castro Cruces Jorge Eduardo</h3>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="images/PaolaGalindo.jpg" alt="Person 3" />
+									</div>
+									<h3>Galindo Cruz Paola Leticia</h3>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="images/RoxanaHerrera.jpg" alt="Person 2" />
+									</div>
+									<h3>Herrera Merino Roxana Angélica</h3>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="images/MiguelMartinez.jpg" alt="Person 2" />
+									</div>
+									<h3>Martínez Quevedo Miguel Ángel</h3>
+								</div>
+								<div class="box person">
+									<div class="image round">
+										<img src="images/EduardoVazquez.jpg" alt="Person 2" />
+									</div>
+									<h3>Vázquez Martínez Jesús Eduardo</h3>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<a href="#footer" class="more">Learn More</a>
+			</section>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contáctanos</h2>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">NOMBRE</label>
+							<input name="name" id="name" type="text" placeholder="NOMBRE">
+						</div>
+						<div class="field half">
+							<label for="email">EMAIL</label>
+							<input name="email" id="email" type="email" placeholder="EMAIL">
+						</div>
+						<div class="field">
+							<label for="message">MENSAJE</label>
+							<textarea name="message" id="message" rows="6" placeholder="MENSAJE"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="ENVIAR" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+					<div class="copyright">
+						&copy; Untitled. Design: <a href="index.html">OPAUL</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>🌻OPAUL🌻</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/icon.ico" type="image/x-icon">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">OPAUL <span>ESCOM</span></a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+			
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">PÁGINA PRINCIPAL</a></li>
+					<li><a href="temario.html">TEMARIO</a></li>
+					<li><a href="#footer">CONTÁCTANOS</a></li>
+				</ul>
+			</nav>
+
+		<!-- Content -->
+			<section id="post" class="wrapper bg-img" data-bg="banner-1-1.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Temario</h2>
+							<p>Opaul</p>
+						</header>
+						<div class="content">
+							<ul class="temario">
+								<li><a href="#I">TIPOS ABSTRÁCTOS DE DATOS (TAD's)</a></li>
+								<li><a href="#II">ESTRUCTURAS DE DATOS LINEALES ESTÁTICAS Y DINÁMICAS</a></li>
+								<li><a href="#III">RECURSIVIDAD Y ESTRCUTURAS DE DATOS NO LINEALES</a></li>
+								<li><a href="#IV">DESARROLLO DE APLICACIONES</a></li>
+							</ul>
+							<iframe src=https://docs.google.com/viewer?srcid=1FEJK4V9VjNiVCVBAsq-fc6aCSxMploFS&pid=explorer&efh=false&a=v&chrome=false&embedded=true width=100% height=680px></iframe>
+							<br><br><br><br><br><br>
+							<p id="I">
+								<h2>TIPOS ABSTRÁCTOS DE DATOS (TAD's)</h2>
+								<p>
+									Con mucha frecuencia se utilizan los términos TDA y Abstracción de Datos de manera equivalente, y esto es debido a la similitud e interdependencia de ambos. Sin embargo, es importante definir por separado los dos conceptos.
+								</p>
+								<p>
+									Como ya se mencionó, los Lenguajes de Programación Orientados a Objetos son lenguajes formados por diferentes métodos o funciones y que son llamados en el orden en que el programa lo requiere, o el usuario lo desea. La abstracción de datos consiste en ocultar las características de un objeto y obviarlas, de manera que solamente utilizamos el nombre del objeto en nuestro programa. Esto es similar a una situación de la vida cotidiana. Cuando yo digo la palabra “perro”, usted no necesita que yo le diga lo que hace el perro. Usted ya sabe la forma que tiene un perro y también sabe que los perros ladran. De manera que yo abstraigo todas las características de todos los perros en un solo término, al cual llamo “perro”. A esto se le llama ‘abstracción’ y es un concepto muy útil en la programación, ya que un usuario no necesita mencionar todas las características y funciones de un objeto cada vez que este se utiliza, sino que son declaradas por separado en el programa y simplemente se utiliza el término abstracto (“perro”) para mencionarlo.
+								</p>
+								<p>
+									En el ejemplo anterior, “perro” es un Tipo de Dato Abstracto y todo el proceso de definirlo, implementarlo y mencionarlo es a lo que llamamos Abstracción de Datos.
+								</p>
+								<p>
+									Vamos a poner un ejemplo real de la programación. Supongamos que en algún Lenguaje de Programación Orientado a Objetos un pequeño programa saca el área de un rectángulo de las dimensiones que un usuario decida. Pensemos también que el usuario probablemente quiera saber el área de varios rectángulos. Sería muy tedioso para el programador definir la multiplicación de ‘base’ por ‘altura’ varias veces en el programa, además que limitaría al usuario a sacar un número determinado de áreas. Por ello, el programador puede crear una función denominada ‘Área’, la cual va a ser llamada, con los parámetros correspondientes, el número de veces que sean necesitadas por el usuario y así el programador se evita mucho trabajo, el programa resulta más rápido, más eficiente y de menor longitud. Para lograr esto, se crea el método Área de una manera separada de la interfaz gráfica presentada al usuario y se estipula ahí la operación a realizar, devolviendo el valor de la multiplicación. En el método principal solamente se llama a la función Área y el programa hace el resto.
+								</p>
+								<p>
+									Al hecho de guardar todas las características y habilidades de un objeto por separado se le llama Encapsulamiento y es también un concepto importante para entender la estructuración de datos. Es frecuente que el Encapsulamiento sea usado como un sinónimo del Ocultación de información, aunque algunos creen que no es así.
+								</p>
+								<footer>
+								<a href="https://es.wikipedia.org/wiki/Tipo_de_dato_abstracto" class="button" target="_blank">Leer mas...</a>
+							</footer>
+							</p>
+							<br><br><br><br><br><br>
+							<p id="II">
+								<h2>ESTRUCTURAS DE DATOS LINEALES ESTÁTICAS Y DINÁMICAS</h2>
+								<p>
+									Como ya sabemos, las computadoras fueron diseñadas o ideadas como una
+									herramienta mediante la cual podemos realizar operaciones de cálculo
+									complicadas en un lapso de mínimo tiempo. Pero la mayoría de las
+									aplicaciones de este fantástico invento del hombre, son las de almacenamiento
+									y acceso de grandes cantidades de información.
+									La información que se procesa en la computadora es un conjunto de datos, que
+									pueden ser simples o estructurados. Los datos simples son aquellos que
+									ocupan sólo un localidad de memoria, mientras que los estructurados son un
+									conjunto de casillas de memoria a las cuales hacemos referencia mediante un
+									identificador único.
+									Debido a que por lo general tenemos que tratar con conjuntos de datos y no
+									con datos simples (enteros, reales, booleanos, etc.) que por sí solos no nos
+									dicen nada, ni nos sirven de mucho, es necesario tratar con estructuras de
+									datos adecuadas a cada necesidad.
+									Las estructuras de datos son una colección de datos cuya organización se
+									caracteriza por las funciones de acceso que se usan para almacenar y acceder
+									a elementos individuales de datos.
+									Una estructura de datos se caracteriza por lo siguiente:
+									<ul>
+										<li>Pueden descomponerse en los elementos que la forman.</li>
+										<li>La manera en que se colocan los elementos dentro de la estructura afectará la forma en que se realicen los accesos a cada elemento.</li>
+										<li>La colocación de los elementos y la manera en que se accede a ellos puede ser encapsulada.</li>
+									</ul>
+								</p>
+								<footer>
+								<a href="https://es.wikibooks.org/wiki/Estructuras_de_datos_dinámicas/Texto_completo" class="button" target="_blank">Leer mas...</a>
+							</p>
+							<br><br><br><br><br><br>
+							<p id="III">
+								<h2>RECURSIVIDAD Y ESTRCUTURAS DE DATOS NO LINEALES</h2>
+								<p>
+									Recursividad:
+								</p>
+								<p>
+									Recurrencia, recursión o recursividad es la forma en la cual se especifica un
+									proceso basado en su propia definición. Siendo un poco más precisos, y para
+									evitar el aparente círculo sin fin en esta definición:
+									Un problema que pueda ser definido en función de su tamaño, sea este N, pueda
+									ser dividido en instancias más pequeñas (< N) del mismo problema y se conozca
+									la solución explícita a las instancias más simples, lo que se conoce como casos
+									base, se puede aplicar inducción sobre las llamadas más pequeñas y suponer que
+									estas quedan resueltas.
+									Para que se entienda mejor a continuación se exponen algunos ejemplos:
+									 Factorial: Se desea calcular (el factorial de , que se define como el
+									producto de todos los enteros positivos de a ). Se puede definir el
+									problema de forma recurrente como ; como es menor
+									que podemos aplicar inducción por lo que disponemos del resultado. El
+									caso base es que es .
+									 Algoritmo de ordenación por fusión: Sea v un vector de n elementos, podemos
+									separar el vector en dos mitades. Estas dos mitades tienen tamaño n/2 por lo
+									que por inducción podemos aplicar la ordenación en estos dos subproblemas.
+									Una vez tenemos ambas mitades ordenadas simplemente debemos
+									fusionarlas. El caso base es ordenar un vector de cero o un elemento, que está
+									trivialmente ordenado y no hay que hacer nada.
+									En estos ejemplos podemos observar como un problema se divide en varias (una
+									o más) instancias del mismo problema, pero de tamaño menor gracias a lo cual se
+									puede aplicar inducción, llegando a un punto donde se conoce el resultado (el
+									caso base).
+									Nota: aunque los términos "recursión" y "recursividad" son ampliamente
+									empleados en el campo de la informática, el término correcto en castellano
+									esrecurrencia. Sin embargo este último término es algo más específico. 
+								</p>
+								<footer>
+								<a href="http://itpn.mx/recursositics/3semestre/estructurayorganizaciondedatos/Unidad III.pdf" class="button" target="_blank">Leer mas...</a>
+							</p>
+							<br><br><br><br><br><br>
+							<p id="IV">
+								<h2>DESARROLLO DE APLICACIONES</h2>
+								<p>
+									Según lo definido por MicroServices, el desarrollo de aplicaciones móviles son los procedimientos y procesos establecidos que intervienen cuando se crea software para pequeños dispositivos informáticos inalámbricos, como tabletas y teléfonos inteligentes. Al igual que el desarrollo de aplicaciones web, los procesos de desarrollo de aplicaciones móviles tienen sus raíces en el desarrollo de software tradicional.
+								</p>
+								
+								<p>
+									Desarrollo de Software:
+								<br>
+									Cuando se trata del desarrollo de aplicaciones móviles, uno requiere acceso a kits de desarrollo de software (SDK) que permiten a los programadores diseñar y probar su aplicación de código en un entorno simulado controlado.
+
+									Los SDK comúnmente utilizados son:
+									<ul>
+										<li>Unity</li>
+										<li>Android SDK</li>
+										<li>Licencia de Desarrollador iOS (necesaria para desarrollar aplicaciones para iOS)</li>
+									</ul>
+								</p>
+								<p>
+									Para crear una aplicación móvil exitosa, los programadores deben pasar por las siguientes fases:
+									<ol>
+										<li>La investigación: Refinación de la idea a través de la investigación</li>
+										<li>Wireframing: creación del marco esquelético de la aplicación
+											<ul>
+												<li>Evaluación de viabilidad técnica: teniendo en cuenta los sistemas de back-end de la aplicación</li>
+											</ul>
+										</li>
+										<li>Prototipo: un prototipo rápido es el concepto de la aplicación en realidad</li>
+										<li>Diseño: incluye codificación y diseño de la interfaz</li>
+										<li>Desarrollo: desarrollo progresivo de la aplicación
+											<ul>
+												<li>Pruebas: prueba de funcionalidad y cualquier error que deba corregirse</li>
+												<li>Implementación: presentación de la aplicación móvil final</li>
+											</ul>
+										</li>
+									</ol>
+								</p>
+								<footer>
+								<a href="https://invidgroup.com/es/que-es-el-desarrollo-de-aplicaciones-moviles/" class="button" target="_blank">Leer mas...</a>
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contáctanos</h2>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">NOMBRE</label>
+							<input name="name" id="name" type="text" placeholder="NOMBRE">
+						</div>
+						<div class="field half">
+							<label for="email">EMAIL</label>
+							<input name="email" id="email" type="email" placeholder="EMAIL">
+						</div>
+						<div class="field">
+							<label for="message">MENSAJE</label>
+							<textarea name="message" id="message" rows="6" placeholder="MENSAJE"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="ENVIAR" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+					<div class="copyright">
+						&copy; Untitled. Design: <a href="index.html">OPAUL</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
